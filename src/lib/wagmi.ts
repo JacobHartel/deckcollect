@@ -1,5 +1,5 @@
 import { getDefaultConfig } from '@rainbow-me/rainbowkit';
-import { chains } from './chains';
+import { chains } from '../lib/chains';
 
 export const config = getDefaultConfig({
   appName: 'DeckCollect',

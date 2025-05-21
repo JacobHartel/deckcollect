@@ -1,3 +1,14 @@
-export default function Home() {
-  return <h1 style={{color:"lime",fontSize:"3rem"}}>fuck chatgpt</h1>;
+import { Nav } from "@/components/nav";
+import { Carousel } from "@/components/carousel";
+
+export default function Page() {
+  return (
+    <>
+      <Nav />
+      <main className="p-8">
+        
+        <Carousel />
+      </main>
+    </>
+  );
 }
