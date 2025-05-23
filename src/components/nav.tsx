@@ -12,6 +12,7 @@ export function Nav() {
         <Link href="/packs"><Button variant="ghost">Packs</Button></Link>
         <Link href="/peeps"><Button variant="ghost">Peeps</Button></Link>
       </div>
+      <h1 className="text-2xl font-bold absolute left-1/2 transform -translate-x-1/2">Deck Collect</h1> 
       <WalletConnect />
     </nav>
   );

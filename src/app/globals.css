@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "keen-slider/keen-slider.min.css";
@@ -47,7 +51,7 @@
 
 :root {
   --radius: 0.625rem;
-  --background: oklch(1 0 0);
+  --background: rgb(170, 170, 170);
   --foreground: oklch(0.147 0.004 49.25);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.147 0.004 49.25);
@@ -121,4 +125,30 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@keyframes pack-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes pack-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(255, 255, 0, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(255, 255, 0, 0.6));
+  }
+}
+
+.pack-float {
+  animation: pack-float 3s ease-in-out infinite;
+}
+
+.pack-glow:hover {
+  animation: pack-glow 1.8s ease-in-out infinite;
 }
